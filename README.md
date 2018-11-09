@@ -9,7 +9,7 @@ This module is meant to make it easier for you to add cool social media links to
 Clone the repository to your system, and copy the files into your *Drupal Installation* at `\modules\custom\SocialLinks\`.
 
 #### STEP 2
-Navigate to `Manage ? Extend ? Custom` and check `SocialLinks`.
+Navigate to `Manage > Extend > Custom` and check `SocialLinks`.
 
 #### STEP 3
 Click on ***Install***. You are now ready to start using *SocialLinks*.
@@ -20,7 +20,7 @@ You can configure the module to specify the URLs for the social media links in t
 **Note**: *You must be an administrator for this.*
 
 #### STEP 1
-Navigate to `Manage ? Configuration ? Development ? SocialLinks Configuration`
+Navigate to `Manage > Configuration > Development > SocialLinks Configuration`
 
 This will lead you to `/admin/config/Social/config`.
 
