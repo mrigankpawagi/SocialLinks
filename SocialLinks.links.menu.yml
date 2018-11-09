@@ -1,0 +1,6 @@
+SocialLinks.admin:
+  title: 'SocialLinks Configuration'
+  description: 'Configure links to your social media handles.'
+  parent: system.admin_config_development
+  route_name: SocialLinks.config
+  weight: 100
