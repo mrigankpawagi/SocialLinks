@@ -1,4 +1,4 @@
-# SocialLinks
+﻿# SocialLinks
 This module is meant to make it easier for you to add cool social media links to your organisation - right on your Drupal Website!
 
 ![image](https://user-images.githubusercontent.com/25179158/48263659-e676e880-e44c-11e8-857f-7b750df4d526.png)
@@ -9,7 +9,11 @@ This module is meant to make it easier for you to add cool social media links to
 Clone the repository to your system, and copy the files into your *Drupal Installation* at `\modules\custom\SocialLinks\`.
 
 #### STEP 2
+<<<<<<< HEAD
 Navigate to `Manage → Extend → Custom` and check `SocialLinks`.
+=======
+Navigate to `Manage > Extend > Custom` and check `SocialLinks`.
+>>>>>>> origin/master
 
 #### STEP 3
 Click on ***Install***. You are now ready to start using *SocialLinks*.
@@ -20,7 +24,11 @@ You can configure the module to specify the URLs for the social media links in t
 **Note**: *You must be an administrator for this.*
 
 #### STEP 1
+<<<<<<< HEAD
 Navigate to `Manage → Configuration → Development → SocialLinks Configuration`
+=======
+Navigate to `Manage > Configuration > Development > SocialLinks Configuration`
+>>>>>>> origin/master
 
 This will lead you to `/admin/config/Social/config`.
 
@@ -37,6 +45,7 @@ Click on ***Save Configuration***.  You are done!
 Head on to `/Social` from your website to see *SocialLinks* in action.
 
 *For a working demo, [click here](http://dev-mriganksdrupalsite.pantheonsite.io/Social).*
+<<<<<<< HEAD
 
 ## How *SocialLinks* was made
 SocialLinks was made entirely by me, and the only external library I used was *FontAwesome* for the Social Media Website Icons.
