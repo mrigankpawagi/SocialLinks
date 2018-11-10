@@ -14,3 +14,4 @@ SocialLinks.config:
     _title: 'SocialLinks Configuration'
   requirements:
     _permission: 'administer site configuration'
+    

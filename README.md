@@ -1,4 +1,4 @@
-﻿# SocialLinks
+# SocialLinks
 This module is meant to make it easier for you to add cool social media links to your organisation - right on your Drupal Website!
 
 ![image](https://user-images.githubusercontent.com/25179158/48263659-e676e880-e44c-11e8-857f-7b750df4d526.png)

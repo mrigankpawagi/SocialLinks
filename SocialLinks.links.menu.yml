@@ -4,3 +4,4 @@ SocialLinks.admin:
   parent: system.admin_config_development
   route_name: SocialLinks.config
   weight: 100
+  
