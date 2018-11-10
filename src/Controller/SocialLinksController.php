@@ -9,7 +9,7 @@ use Drupal\Core\Form\FormStateInterface;
 
 class SocialLinksController {
   public function content() {
-    $config = $config = \Drupal::config('SocialLinks.settings');
+    $config = \Drupal::config('SocialLinks.settings');
     return array(
       '#type' => 'markup',
       '#markup' => t('
