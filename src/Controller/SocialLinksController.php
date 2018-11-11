@@ -1,16 +1,12 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\SocialLinks\Controller\SocialLinksController.
- */
-
 namespace Drupal\SocialLinks\Controller;
 
-use Drupal\Core\Form\ConfigFormBase;
-use Drupal\Core\Form\FormStateInterface;
-
 class SocialLinksController {
+
+  /**
+   * {@inheritdoc}
+   */
   public function content() {
     $config = \Drupal::config('SocialLinks.settings');
     return [
@@ -117,7 +113,8 @@ class SocialLinksController {
 <a href="https://www.flickr.com/people/' . $config->get('SocialLinks.flickr') . '" class="fa fa-flickr"></a>
 <a href="https://www.reddit.com/user/' . $config->get('SocialLinks.reddit') . '" class="fa fa-reddit"></a>
 
-      '), 
+      '),
     ];
   }
+
 }
