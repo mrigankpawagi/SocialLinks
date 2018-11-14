@@ -6,7 +6,7 @@ This module is meant to make it easier for you to add cool social media links to
 ## Installation
 
 #### STEP 1
-Clone the repository to your system, and copy the files into your *Drupal Installation* at `\modules\custom\SocialLinks\`.
+Clone the repository to your system, and copy the files into your *Drupal Installation* at `\modules\custom\sociallinks\`.
 
 #### STEP 2
 Navigate to `Manage → Extend → Custom` and check `SocialLinks`.
@@ -59,11 +59,11 @@ The module consists of the basic `.info.yml` to provide information about the mo
 
 > One of the problems I experienced was that the link for *SocialLinks Configuration* in Configuration page was taking me to `/Social` where the module's content lives, not the settings - even though I had specified `/admin/config/Social/config` in `.routing.yml`.
 > 
-> The problem was finally solved when I changed `route_name` under `SocialLinks.admin`  to `SocialLinks.config` (which is routed to configuration), which I had mistakenly put to `SocialLinks.content	` (which routes to the content page).
+> The problem was finally solved when I changed `route_name` under `sociallinks.admin`  to `sociallinks.config` (which is routed to configuration), which I had mistakenly put to `sociallinks.content	` (which routes to the content page).
 
 Further, there is a GNU `LICENSE` and `README.md` needed for the Git repository.
 
-The module consists of 2 components - a controller (`SocialLinksController`) and a form (`SocialLinksConfigForm`).
+The module consists of 2 components - a controller (`sociallinksController`) and a form (`sociallinksConfigForm`).
 
 The Controller contains the markup that is returned to the page. This included the `HTML` markup that makes the icons and the hyperlinks, and some `CSS` within `<style></style>` and a link to the `FontAwesome` library. This code was taken from a fiddle I created myself at [JSFiddle](https://jsfiddle.net/mrigankpawagi/dd24utvp/) earlier.
 
@@ -73,7 +73,7 @@ The Form consists of the Configuration Form that allows Administrators to custom
 >
 >I firstly used 
 
-    \Drupal::config('SocialLinks.facebook')->get('SocialLinks.facebook')
+    \Drupal::config('sociallinkssociallinks.facebook')->get('sociallinkssociallinks.facebook')
     (for the value to facebook)
 
 > but this returned nothing. I noticed that I hadn't imported the required modules from Drupal Core.
@@ -82,6 +82,6 @@ The Form consists of the Configuration Form that allows Administrators to custom
     use Drupal\Core\Form\FormStateInterface;
 > This didn't work either and it finally did when I changed the above segment to
 
-    \Drupal::config('SocialLinks.settings')->get('SocialLinks.facebook')
+    \Drupal::config('sociallinks.settings')->get('sociallinks.facebook')
 
 Finally, there is a `.config.yml` at `config → install`  to put some conventional default configuration.

@@ -1,14 +1,14 @@
 <?php
 
-namespace Drupal\SocialLinks\Controller;
+namespace Drupal\sociallinks\Controller;
 
-class SocialLinksController {
+class SociallinksController {
 
   /**
    * {@inheritdoc}
    */
   public function content() {
-    $config = \Drupal::config('SocialLinks.settings');
+    $config = \Drupal::config('sociallinks.settings');
     return [
       '#type' => 'markup',
       '#markup' => t('
@@ -97,21 +97,21 @@ class SocialLinksController {
 
 </style>
 
-<a href="https://www.facebook.com/' . $config->get('SocialLinks.facebook') . '" class="fa fa-facebook"></a>
-<a href="https://twitter.com/' . $config->get('SocialLinks.twitter') . '" class="fa fa-twitter"></a>
-<a href="https://plus.google.com/+' . $config->get('SocialLinks.gplus') . '" class="fa fa-google"></a>
-<a href="https://www.linkedin.com/in/' . $config->get('SocialLinks.linkedin') . '" class="fa fa-linkedin"></a>
-<a href="https://www.youtube.com/channel/' . $config->get('SocialLinks.youtube') . '" class="fa fa-youtube"></a>
-<a href="https://instagram.com/' . $config->get('SocialLinks.instagram') . '" class="fa fa-instagram"></a>
-<a href="https://in.pinterest.com/' . $config->get('SocialLinks.pinterest') . '" class="fa fa-pinterest"></a>
-<a href="https://www.snapchat.com/add/' . $config->get('SocialLinks.snapchat') . '" class="fa fa-snapchat-ghost"></a>
-<a href="https://hatscripts.com/addskype/?' . $config->get('SocialLinks.skype') . '" class="fa fa-skype"></a>
-<a href="https://dribbble.com/' . $config->get('SocialLinks.dribbble') . '" class="fa fa-dribbble"></a>
-<a href="https://vimeo.com/' . $config->get('SocialLinks.vimeo') . '" class="fa fa-vimeo"></a>
-<a href="https://www.tumblr.com/blog/' . $config->get('SocialLinks.tumblr') . '" class="fa fa-tumblr"></a>
-<a href="https://www.stumbleupon.com/stumbler/' . $config->get('SocialLinks.stumble') . '" class="fa fa-stumbleupon"></a>
-<a href="https://www.flickr.com/people/' . $config->get('SocialLinks.flickr') . '" class="fa fa-flickr"></a>
-<a href="https://www.reddit.com/user/' . $config->get('SocialLinks.reddit') . '" class="fa fa-reddit"></a>
+<a href="https://www.facebook.com/' . $config->get('sociallinks.facebook') . '" class="fa fa-facebook"></a>
+<a href="https://twitter.com/' . $config->get('sociallinks.twitter') . '" class="fa fa-twitter"></a>
+<a href="https://plus.google.com/+' . $config->get('sociallinks.gplus') . '" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/' . $config->get('sociallinks.linkedin') . '" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/channel/' . $config->get('sociallinks.youtube') . '" class="fa fa-youtube"></a>
+<a href="https://instagram.com/' . $config->get('sociallinks.instagram') . '" class="fa fa-instagram"></a>
+<a href="https://in.pinterest.com/' . $config->get('sociallinks.pinterest') . '" class="fa fa-pinterest"></a>
+<a href="https://www.snapchat.com/add/' . $config->get('sociallinks.snapchat') . '" class="fa fa-snapchat-ghost"></a>
+<a href="https://hatscripts.com/addskype/?' . $config->get('sociallinks.skype') . '" class="fa fa-skype"></a>
+<a href="https://dribbble.com/' . $config->get('sociallinks.dribbble') . '" class="fa fa-dribbble"></a>
+<a href="https://vimeo.com/' . $config->get('sociallinks.vimeo') . '" class="fa fa-vimeo"></a>
+<a href="https://www.tumblr.com/blog/' . $config->get('sociallinks.tumblr') . '" class="fa fa-tumblr"></a>
+<a href="https://www.stumbleupon.com/stumbler/' . $config->get('sociallinks.stumble') . '" class="fa fa-stumbleupon"></a>
+<a href="https://www.flickr.com/people/' . $config->get('sociallinks.flickr') . '" class="fa fa-flickr"></a>
+<a href="https://www.reddit.com/user/' . $config->get('sociallinks.reddit') . '" class="fa fa-reddit"></a>
 
       '),
     ];

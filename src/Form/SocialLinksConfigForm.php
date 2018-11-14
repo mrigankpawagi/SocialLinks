@@ -1,17 +1,17 @@
 <?php
 
-namespace Drupal\SocialLinks\Form;
+namespace Drupal\sociallinks\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
-class SocialLinksConfigForm extends ConfigFormBase {
+class SociallinksConfigForm extends ConfigFormBase {
 
   /**
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'SocialLinks_config_form';
+    return 'sociallinks_config_form';
   }
 
   /**
@@ -20,7 +20,7 @@ class SocialLinksConfigForm extends ConfigFormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
 
     $form = parent::buildForm($form, $form_state);
-    $config = $this->config('SocialLinks.settings');
+    $config = $this->config('sociallinks.settings');
 
     $fields = [
       ['facebook', 'Facebook'],
@@ -44,7 +44,7 @@ class SocialLinksConfigForm extends ConfigFormBase {
       $form[$fields[$i][0]] = [
         '#type' => 'textfield',
         '#title' => $this->t($fields[$i][1]),
-        '#default_value' => $config->get('SocialLinks.' . $fields[$i][0]),
+        '#default_value' => $config->get('sociallinks.' . $fields[$i][0]),
         '#attributes' => [
           'placeholder' => $this->t('username'),
         ],
@@ -59,7 +59,7 @@ class SocialLinksConfigForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
 
-    $config = $this->config('SocialLinks.settings');
+    $config = $this->config('sociallinks.settings');
 
     $fields = [
       'facebook',
@@ -80,7 +80,7 @@ class SocialLinksConfigForm extends ConfigFormBase {
     ];
 
     for ($i = 0; $i < count($fields); $i++) {
-      $config->set('SocialLinks.' . $fields[$i], $form_state->getValue($fields[$i]));
+      $config->set('sociallinks.' . $fields[$i], $form_state->getValue($fields[$i]));
     }
 
     $config->save();
@@ -93,7 +93,7 @@ class SocialLinksConfigForm extends ConfigFormBase {
    */
   protected function getEditableConfigNames() {
     return [
-      'SocialLinks.settings',
+      'sociallinks.settings',
     ];
   }
 
