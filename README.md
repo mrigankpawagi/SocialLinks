@@ -73,7 +73,7 @@ The Form consists of the Configuration Form that allows Administrators to custom
 >
 >I firstly used 
 
-    \Drupal::config('sociallinkssociallinks.facebook')->get('sociallinkssociallinks.facebook')
+    \Drupal::config('sociallinks.facebook')->get('sociallinks.facebook')
     (for the value to facebook)
 
 > but this returned nothing. I noticed that I hadn't imported the required modules from Drupal Core.
